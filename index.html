@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mundo Invertido | Semana Front-end</title>
+    <title>Mundo Invertido</title>
 
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
@@ -14,7 +14,7 @@
         <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
       </audio>
       <div class="header-content">
-        <img class="invert-element" src="assets/images/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO." />
+        <img class="invert-element" src="assets/images/banner/logo.svg" alt="Imagem principal Mundo Invertido." />
         <p class="invert-element" role="text">
           Uma jornada para quem não tem medo do desconhecido. O caminho para o
           Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a
@@ -33,7 +33,7 @@
 
       <section id="section-inverted-world" class="container">
         <div class="section-texts">
-          <h1>O Mundo Invertido</h1>
+          <h2>O Mundo Invertido</h2>
           <p role="text">
             O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas
             horrendas, tempestades assustadoras, muita escuridão e entidades
@@ -43,9 +43,7 @@
         </div>
 
         <img
-          class="invert-element"
-          src="assets/images/content/inverted-world.png"
-          alt="Image ilustrativa do Mundo Invertido"
+          class="invert-element" src="assets/images/content/inverted-world.png" alt="Image ilustrativa do Mundo Invertido"
         />
       </section>
 
@@ -104,16 +102,16 @@
 
           <div class="form-container">
             <form>
-              <label for="name">Nome Completo</label>
+              <label for="txtName">Nome Completo</label>
               <input type="text" name="name" id="txtName">
           
-              <label for="email">E-mail</label>
+              <label for="txtEmail">E-mail</label>
               <input type="email" name="email" id="txtEmail">
           
-              <label for="level">Level</label>
+              <label for="txtLevel">Level</label>
               <input type="text" name="level" id="txtLevel">
           
-              <label for="character">Personagem</label>
+              <label for="txtCharacter">Personagem</label>
               <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
             
               <button type="button" id="btnSubscribe">Me inscrever</button>
@@ -129,12 +127,15 @@
         Projeto construído para fins didáticos, com o objetivo de colocar em
         prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO._
       </p>
-      <img src="assets/images/footer/logo.svg" alt="">
+      <img src="assets/images/footer/logo.svg" alt="Logo da DIO">
     </footer>
     
     <script type="module" src="assets/js/main.js"></script>
     <script>
-      
+      function switchTheme(){
+        document.body.classList.toggle('dark-theme');
+        document.body.classList.toggle('light-theme');
+      }
     </script>
   </body>
 </html>
